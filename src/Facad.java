@@ -24,10 +24,20 @@ public class Facad {
     public Meal cook(MealType mealType) {
 
         if (mealType.isFried()) {
-            tableWare = tableWares.get(0);
+            for (TableWare t1 : tableWares) {
+                if (t1.canFry()) {
+                    tableWare = t1;
+                    break;
+                }
+            }
         }
         else {
-            tableWare = tableWares.get(1);
+            for (TableWare t2 : tableWares) {
+                if (t2.canBoil()) {
+                    tableWare = t2;
+                    break;
+                }
+            }
         }
 
         switch (mealType) {

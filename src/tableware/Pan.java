@@ -29,7 +29,6 @@ public class Pan implements TableWare {
     @Override
     public Meal cook(MealType mealType) {
         if (mealType.isFried()) {
-
             return new Meal(mealType);
         }
         return null;
