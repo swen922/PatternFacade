@@ -2,10 +2,10 @@
 import meal.Meal;
 import meal.MealType;
 
+/** Фасад, также известен как: Facade */
 
 
 /*** THIS IS OUR CLIENT – HE WANT TO EAT SOMETHING */
-
 public class App {
     public static void main(String[] args) {
 
